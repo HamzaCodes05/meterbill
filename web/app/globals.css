@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-slate-950 text-slate-100 antialiased; }
+
+@media print {
+  body { background: white; color: black; }
+  .no-print { display: none !important; }
+  .print-area { background: white !important; color: black !important; box-shadow: none !important; }
+}
